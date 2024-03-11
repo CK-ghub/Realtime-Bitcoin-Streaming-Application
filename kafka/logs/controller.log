@@ -88,3 +88,7 @@
 [2024-03-11 02:59:10,460] TRACE [Controller id=0] Checking need to trigger auto leader balancing (kafka.controller.KafkaController)
 [2024-03-11 03:02:25,201] INFO [Controller id=0] New topics: [Set(bitcoin_transactions)], deleted topics: [HashSet()], new partition replica assignment [Set(TopicIdReplicaAssignment(bitcoin_transactions,Some(TdJBh2WvQtuaE0xWXdXeKQ),Map(bitcoin_transactions-0 -> ReplicaAssignment(replicas=0, addingReplicas=, removingReplicas=))))] (kafka.controller.KafkaController)
 [2024-03-11 03:02:25,203] INFO [Controller id=0] New partition creation callback for bitcoin_transactions-0 (kafka.controller.KafkaController)
+[2024-03-11 03:04:10,462] INFO [Controller id=0] Processing automatic preferred replica leader election (kafka.controller.KafkaController)
+[2024-03-11 03:04:10,462] TRACE [Controller id=0] Checking need to trigger auto leader balancing (kafka.controller.KafkaController)
+[2024-03-11 03:04:10,462] DEBUG [Controller id=0] Topics not in preferred replica for broker 0 Map() (kafka.controller.KafkaController)
+[2024-03-11 03:04:10,463] TRACE [Controller id=0] Leader imbalance ratio for broker 0 is 0.0 (kafka.controller.KafkaController)
