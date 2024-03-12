@@ -18,6 +18,9 @@ ws_url = 'wss://ws.blockchain.info/inv'
 # Handlers for WebSocket
 def on_open(ws):
     print('Connected to WebSocket')
+    # Subscribe to unconfirmed transactions
+    subscribe_message = json.dumps({"op": "unconfirmed_sub"})
+    ws.send(subscribe_message)
 
 def on_message(ws, message):
     try:
