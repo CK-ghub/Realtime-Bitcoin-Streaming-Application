@@ -8,7 +8,7 @@ kafka_host = 'localhost:9092'
 topic = 'bitcoin_transactions' 
 
 # Kafka connection
-client = KafkaClient(hosts=kafka_hosts)
+client = KafkaClient(hosts=kafka_host)
 topic = client.topics[topic]
 producer = topic.get_producer()
 
